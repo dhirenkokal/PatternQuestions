@@ -6,7 +6,7 @@ public class Main {
         System.out.println();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        RightAngledTrianglePatternNumbers2(n);
+        InvertedRightAngledTrianglePatternNumbers(n);
         sc.close();
     }
 
@@ -51,6 +51,16 @@ public class Main {
         for(int i = 1; i <= n ; i++){
             for(int j = 1; j <= n+1-i; j++){
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+
+    public static void InvertedRightAngledTrianglePatternNumbers(int n){
+        for(int i = 1; i <= n ; i++){
+            for(int j = 1; j <= n+1-i; j++){
+                System.out.print(j );
             }
             System.out.println();
         }
