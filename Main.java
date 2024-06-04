@@ -6,7 +6,7 @@ public class Main {
         System.out.println();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        InvertedRightAngledTrianglePatternNumbers(n);
+        TrianglePatternStars(n);
         sc.close();
     }
 
@@ -66,5 +66,25 @@ public class Main {
         }
     }
 
+    public static void TrianglePatternStars(int n){
+        for(int i = 0; i < n ; i++){
+            
+            //Print Spaces
+            for(int j = 0; j < n-i-1; j++){
+                System.out.print(" ");
+            }
+
+            //Print Stars
+            for(int j = 0; j < 2*i+1; j++){
+                System.out.print("*");
+            }
+
+            //Print Spaces
+            for(int j = 0; j < n-i-1; j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
 
 }
